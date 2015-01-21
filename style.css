@@ -1,0 +1,42 @@
+html,body 
+{
+    height: 100%;
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+core-header-panel
+{
+    height: 100%;
+}
+
+core-toolbar
+{
+    background-color: #3F51B5;
+    color: white
+}
+
+.card
+{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    padding:0px 20px;
+    border-radius: 2px;
+    margin:16px 16px 16px 16px;
+    clear:both;
+    float:left;
+}
+
+.card h1
+{
+    font-weight: 300;
+}
+
+.container
+{
+    width: 80%;
+    margin: 32px auto;
+}
+

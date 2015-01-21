@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Polymer Sample</title>
+
+        <script src="bower_components/webcomponentsjs/webcomponents.js">
+        </script>
+       	<link rel="import" href="bower_components/polymer/polymer.html"/>
+        <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+        <link rel="import" href="bower_components/font-roboto/roboto.html">
+        <link rel="import" href="bower_components/paper-tabs/paper-tabs.html"/>
+        <link rel="import" href="bower_components/paper-tabs/paper-tab.html"/>
+        <link rel="import" href="bower_components/core-toolbar/core-toolbar.html"/>
+        <link rel="import" href="bower_components/paper-shadow/paper-shadow.html"/>
+        <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html"/>
+        <link rel="import" href="bower_components/core-media-query/core-media-query.html"/>
+        <link rel=stylesheet href="style.css"/>
+    </head>
+    <body fullbleed vertical layout unresolved>
+      <core-header-panel flex>
+         <core-toolbar>
+            <paper-icon-button icon="menu"></paper-icon-button>
+            <span flex>Polymer Test</span>
+            <paper-icon-button icon="more-vert"></paper-icon-button>
+<!--              <paper-tabs class="bottom fit" selected="0" flex role="tablist" noink>
+                 <paper-tab>TAB 1</paper-tab>
+                 <paper-tab>TAB 2</paper-tab>
+                 <paper-tab>TAB 3</paper-tab>
+             </paper-tabs> -->
+         </core-toolbar> 
+         <core-media-query query="max-width: 640px" queryMatches="{{phoneScreen}}">
+         </core-media-query>
+         <div class="container" center-justified layout horizontal wrap>
+             <paper-shadow class="card" z="1">
+                 <h1>Tu Hoang Thanh</h1>
+             </paper-shadow>
+             <paper-shadow class="card" z="1">
+                 content
+             </paper-shadow>
+             <paper-shadow class="card" z="1">
+                 content
+             </paper-shadow>
+         </div>   
+      </core-header-panel> 
+    </body>
+</html>
