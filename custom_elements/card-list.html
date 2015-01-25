@@ -1,0 +1,48 @@
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html"/>
+
+<polymer-element name="card-list" attributes="">
+	<template>
+		<style type="text/css">
+		</style>
+
+		<core-ajax 
+		id="ajax" 
+		auto url="../company.json" 
+		on-core-response="{{depsLoaded}}"
+		handleAs="json">
+		</core-ajax>
+
+		<div center-justified layout horizontal wrap>
+			<template repeat="{{dep in deps}}">
+				<template repeat="{{emp in dep.employee}}">
+					<business-card>
+						<img src="{{emp.image}}">
+						<h1>{{emp.name}}</h1>
+						<h4>{{emp.position}}</h4>
+						<span id="room">{{emp.room}}</span>
+						<span id="phone">{{emp.phone}}</span>
+						<span id="mobile">{{emp.mobile}}</span>
+						<span id="email">{{emp.email}}</span>
+					</business-card>
+				</template>
+			</template>
+		</div>
+	</template>
+	<script>
+		var deps;
+		Polymer({
+			
+			created: function()
+			{
+				this.deps = [];
+			},
+			depsLoaded: function()
+			{
+				this.deps = this.$.ajax.response.slice(0);
+				console.log(this.deps);
+			},
+
+		});
+	</script>
+</polymer-element>

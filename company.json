@@ -1,0 +1,103 @@
+[
+  {
+    "depname": "Development",
+    "employee": [
+      {
+        "name": "Jane Clover",
+        "position": "Backend Developer",
+        "room": "314",
+        "phone": "+49 0341 123456 78",
+        "mobile": "+49 157 1234567",
+        "email": "jclover@dev.mycompany.com",
+        "image": "../images/avatar-03.svg"
+      },
+      {
+        "name": "Jason Klein",
+        "position": "Backend Developer",
+        "room": "314",
+        "phone": "+49 0341 123456 45",
+        "mobile": "+49 152 1234567",
+        "email": "jklein@dev.mycompany.com",
+        "image": "../images/avatar-02.svg"
+      },
+      {
+        "name": "Bob Smith",
+        "position": "Frontend Developer",
+        "room": "314",
+        "phone": "+49 0341 123456 60",
+        "mobile": "+49 152 1234567",
+        "email": "bsmith@dev.mycompany.com",
+        "image": "../images/avatar-01.svg"
+      }
+    ]
+  },
+  {
+    "depname": "Marketing & Support",
+    "employee": [
+      {
+        "name": "John Doe",
+        "position": "Customer Support",
+        "room": "312",
+        "phone": "+49 0341 123456 90",
+        "mobile": "+49 157 1234567",
+        "email": "jdoe@sup.mycompany.com",
+        "image": "../images/avatar-05.svg"
+      },
+      {
+        "name": "Emily Foulton",
+        "position": "Customer Relations",
+        "room": "312",
+        "phone": "+49 0341 123456 70",
+        "mobile": "+49 152 1234567",
+        "email": "efoulton@sup.mycompany.com",
+        "image": "../images/avatar-06.svg"
+      }
+    ]
+  },
+  {
+    "depname": "Backoffice",
+    "employee": [
+      {
+        "name": "Elisabeth Schwarz",
+        "position": "Accounting",
+        "room": "310",
+        "phone": "+49 0341 123456 10",
+        "mobile": "+49 157 1234567",
+        "email": "eschwarz@office.mycompany.com",
+        "image": "../images/avatar-13.svg"
+      },
+      {
+        "name": "Jimmy Neil Palm",
+        "position": "Human Resources",
+        "room": "310",
+        "phone": "+49 0341 123456 73",
+        "mobile": "+49 152 1234567",
+        "email": "jnpalm@office.mycompany.com",
+        "image": "../images/avatar-04.svg"
+      }
+    ]
+  },
+  {
+    "depname": "Management",
+    "employee": [
+      {
+        "name": "Ron Paul",
+        "position": "CEO & Marketing Manager",
+        "room": "312",
+        "phone": "+49 0341 123456 99",
+        "mobile": "+49 157 1234567",
+        "email": "rpaul@mycompany.com",
+        "image": "../images/avatar-14.svg"
+      },
+      {
+        "name": "Samantha Veil",
+        "position": "CPO & CTO",
+        "room": "314",
+        "phone": "+49 0341 123456 02",
+        "mobile": "+49 152 1234567",
+        "email": "sveil@mycompany.com",
+        "image": "../images/avatar-07.svg"
+      }
+    ]
+  }
+]

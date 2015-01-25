@@ -1,0 +1,48 @@
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html"/>
+<link rel="import" href="../bower_components/core-icons/core-icons.html"/>
+<link rel="import" href="../bower_components/core-icons/communication-icons.html"/>
+
+<polymer-element name="business-card" attributes="image">
+	<template>
+		<link rel="stylesheet" type="text/css" href="business-card.css">
+
+		<paper-shadow z="1" horizontal layout>
+			<div class="card-image" flex>
+				<content select="img"></content>
+			</div>
+			<div class="card-content" flex two>
+				<div class="card-heading" style="color:#3F51B5">
+					<content select="h1"></content>
+		        	<content select="h4"></content>
+				</div>
+				<ul type="none">	
+					<li>
+						<core-icon icon="room" role="img" style="margin-right:30px;"></core-icon>
+						<content select="#room"></content>
+					</li>
+					<li>
+						<core-icon icon="communication:phone" role="img" style="margin-right:30px;"></core-icon>
+						<content select="#phone"></content>
+					</li>
+					<li>
+						<core-icon icon="communication:stay-primary-portrait" role="img" style="margin-right:30px;"></core-icon>
+						<content select="#mobile"></content>
+					</li>
+					<li>
+						<core-icon icon="communication:email" role="img" style="margin-right:30px;"></core-icon>
+						<content select="#email"></content>
+					</li>
+				</ul>
+				
+			</div>
+	    </paper-shadow>
+	</template>
+	<script>
+		Polymer({
+			ready: function(){
+
+			}
+		});
+	</script>
+</polymer-element>
