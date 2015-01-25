@@ -1,0 +1,58 @@
+paper-shadow
+			{
+			    width: 500px;
+			    height: 250px;
+			    background-color: white;
+			    padding:0px 0px;
+			    border-radius: 2px;
+			    margin: 16px 16px 16px 16px;
+			    clear:both;
+			    float:left;
+			}
+
+			.card-image
+			{
+				background-image: url("../images/avatar-03.svg") ;
+				background-size: auto 100%;
+				background-position: center;
+				width: 150px;
+			}
+
+			.card-heading
+			{
+				padding-bottom: 16px;
+			}
+
+			paper-shadow h1
+			{
+			    font-weight: 300;
+			}
+
+			h1,h4,p
+			{
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+
+			.card-content
+			{
+				margin: 16px;
+			}
+
+			ul
+			{
+				padding-left: 0px;
+				margin-top: 0px;
+			}
+
+			ul li
+			{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			core-icon
+			{
+				width: 20px!important;
+				height: 20px!important;
+			}

@@ -1,0 +1,43 @@
+<link rel="import" href="../bower_components/polymer/polymer.html"/>
+<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html"/>
+<link rel="import" href="../bower_components/core-icons/core-icons.html"/>
+<link rel="import" href="../bower_components/core-icons/communication-icons.html"/>
+
+<polymer-element name="note-card" attributes="topic">
+	<template>
+		<link rel="stylesheet" type="text/css" href="note-card.css">
+
+		<paper-shadow z="1" horizontal layout>
+			<div class="card-image" flex>
+			</div>
+			<div class="card-content" flex two>
+				<div class="card-heading" style="color:#3F51B5">
+					<h1>Jane Clover</h1>
+		        	<h4>Development</h4>
+				</div>
+				<ul type="none">	
+					<li>
+						<core-icon icon="room" role="img" style="margin-right:30px;"></core-icon>Room 314
+					</li>
+					<li>
+						<core-icon icon="communication:phone" role="img" style="margin-right:30px;"></core-icon>+49 0341 123456 78
+					</li>
+					<li>
+						<core-icon icon="communication:stay-primary-portrait" role="img" style="margin-right:30px;"></core-icon>+49 157 1234567
+					</li>
+					<li>
+						<core-icon icon="communication:email" role="img" style="margin-right:30px;"></core-icon>jclover@dev.mycompany.com
+					</li>
+				</ul>
+				
+			</div>
+	    </paper-shadow>
+	</template>
+	<script>
+		Polymer({
+			ready: function(){
+
+			}
+		});
+	</script>
+</polymer-element>
