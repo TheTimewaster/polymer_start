@@ -1,5 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html"/>
 <link rel="import" href="../bower_components/core-ajax/core-ajax.html"/>
+<link rel="import" href="../bower_components/core-media-query/core-media-query.html"/>
 
 <polymer-element name="card-list" attributes="">
 	<template>
@@ -13,10 +14,12 @@
 		handleAs="json">
 		</core-ajax>
 
+		<core-media-query query="max-width: 640px" queryMatches="{{phoneScreen}}"></core-media-query>
+
 		<div center-justified layout horizontal wrap>
 			<template repeat="{{dep in deps}}">
 				<template repeat="{{emp in dep.employee}}">
-					<business-card>
+					<business-card resize="{{phoneScreen}}">
 						<img src="{{emp.image}}">
 						<h1>{{emp.name}}</h1>
 						<h4>{{emp.position}}</h4>
@@ -27,6 +30,8 @@
 					</business-card>
 				</template>
 			</template>
+
+			<span justify-center layout style="color:grey;margin-top:40px;">Tu Hoang Thanh, 2015, Licensed under <a href="../LICENSE.txt">Apache License, Version 2.0</a></span>
 		</div>
 	</template>
 	<script>
